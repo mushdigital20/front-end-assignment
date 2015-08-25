@@ -1,24 +1,37 @@
 /* 
 * @Author: pedromello
 * @Date:   2015-08-25 22:13:19
-* @Last Modified by:   pedromello
-* @Last Modified time: 2015-08-26 00:13:14
+* @Last Modified by:   Pedro Mello
+* @Last Modified time: 2015-08-26 03:02:44
 */
 
-body{
+html,body{
 	color:#4D4D4D;
+    height: 100%;
 }
 
-.vertical-container{
+.btn
+{
+    cursor: pointer;
+    min-width: 200px;
+}
+
+.vertical-container, .vertical-container-modal{
     display:table;
     height: 100%;
     width: 100%;
+}
+
+.vertical-container-modal{
     pointer-events:none;
 }
 
-.vertical-center{
+.vertical-center, .vertical-center-modal{
     display: table-cell;
     vertical-align: middle;
+}
+
+.vertical-center-modal{
     pointer-events:none;
 }
 
@@ -52,4 +65,10 @@ body{
 
 .progress-bar {
     transition: none!important;
+}
+
+@font-face {
+  font-family: 'Glyphicons Halflings';
+  src: url('../fonts/glyphicons-halflings-regular.eot');
+  src: url('../fonts/glyphicons-halflings-regular.eot?#iefix') format('embedded-opentype'), url('../fonts/glyphicons-halflings-regular.woff') format('woff'), url('../fonts/glyphicons-halflings-regular.ttf') format('truetype'), url('../fonts/glyphicons-halflings-regular.svg#glyphicons-halflingsregular') format('svg');
 }
