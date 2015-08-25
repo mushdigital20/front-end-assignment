@@ -1,0 +1,55 @@
+/* 
+* @Author: pedromello
+* @Date:   2015-08-25 22:13:19
+* @Last Modified by:   pedromello
+* @Last Modified time: 2015-08-26 00:13:14
+*/
+
+body{
+	color:#4D4D4D;
+}
+
+.vertical-container{
+    display:table;
+    height: 100%;
+    width: 100%;
+    pointer-events:none;
+}
+
+.vertical-center{
+    display: table-cell;
+    vertical-align: middle;
+    pointer-events:none;
+}
+
+.modal-content {
+    width:inherit;
+    height:inherit;
+    margin: 0 auto;
+    pointer-events:all;
+}
+
+.modal-header {
+    pading:5px 0px 6px 15px;
+    background-color:#4D4D4D;
+    color:#D4D4D4;
+}
+
+.modal-body {
+    padding: 45px;
+    text-align: center;
+}
+
+.modal-body p{
+	font-size: 120%;
+	padding-top: 15px;
+}
+
+.glyphicon{
+	color:#5cb85c;
+    display:none;
+}
+
+.progress-bar {
+    transition: none!important;
+}
