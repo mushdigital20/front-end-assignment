@@ -27,11 +27,12 @@ function openLightBox(callback)
 {
 	var modal = $('#myModal');
 
-	modal.modal();
-	modal.on('shown.bs.modal', function(){
+	$(document).on('shown.bs.modal', function(){
 		//Lighbox is presented
 		callback();
 	});
+	
+	modal.modal();
 }
 
 //Animates the progressbar with the specified duration
